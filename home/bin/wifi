@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # @(#) wifi v0.2.0 2015-09-24
 #
@@ -15,7 +15,7 @@
 #
 # ▁▂▃▅▇
 
-source "$HOME"/.bin/vital.sh
+source "$HOME"/bin/vital.sh
 
 if ! is_osx; then
     echo "wifi: require OS X" 1>&2
@@ -129,4 +129,4 @@ fi
 
 # Outputs wifi
 #   example: "fun-wifi 351Mbs ▂ ▅   "
-echo -e "${ssid} ${rate}Mbs ${signal}"
+echo -e "${ssid} ${rate}Mbs"
